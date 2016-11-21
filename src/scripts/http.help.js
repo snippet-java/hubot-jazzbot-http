@@ -2,7 +2,7 @@
 //	Listens for commands to register a bot
 //
 // Commands:
-//   hubot bot help - Displays all bot commands.
+//   hubot http help - Displays all http commands.
 //
 // Author:
 //	syahrul.aiman@my.ibm.com
