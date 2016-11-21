@@ -35,9 +35,7 @@ module.exports = (robot) => {
 				res.reply("url is not set for " + userId + ". Please set url and try again.");
 				return;
 			}
-			host = host.replace(/\/$/, "");
-			path = path.replace(/^\//, "");
-			url = host + "/" + path;
+			url = host.replace(/\/$/, "") + "/" + path.replace(/^\//, "");
 		}
 		res.http(url).get()( (err, httpres, body) => {
 			if (err) {
